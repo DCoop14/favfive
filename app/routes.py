@@ -6,7 +6,7 @@ def index():
     artists = [
         {'name': 'Lauryn Hill',
         'img' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8BkZXMCvK4krctzMNKOevheGP6wTCCbZ3Kw&usqp=CAU',
-        'Genre': 'Hip hop neo soul'},
+        'Genre': 'Hip hop, neo soul'},
            
         {'name': 'Barrington Levy', 
         'img': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8bNIZ4WQ7KTA2RKuOs6_nuhdSaZAGdK-bNg&usqp=CAU',

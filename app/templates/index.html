@@ -12,7 +12,7 @@
 </head>
 <body>
 
-THIS IS THE HOME PAGE
+<a href="/contact">Go to Contact Page</a>
 
     {% for x in names %}
         {% if x['artists'] == 'Laury Hill' %}
@@ -20,8 +20,7 @@ THIS IS THE HOME PAGE
             <img src="{{ x['img'] }}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{ x['name']}}</h5>
-              <p class="card-text">Genre: {{ 'genre' }} 
-                }}</p>
+              <h4 class="card-text">{{ x['Genre'] }}</h4>
               
             </div>
           </div>
@@ -31,7 +30,7 @@ THIS IS THE HOME PAGE
             <img src="{{ x['img'] }}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{ x['name']}}</h5>
-              <p class="card-text">Genre: {{ x['genre'] }}</p>
+              <p class="card-text">Genre: {{ x['Genre'] }}</p>
 
          {% endif %}
 
