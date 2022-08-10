@@ -1,45 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Home</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-<a href="/contact">Go to Contact Page</a>
+{% block content %}
 
-    {% for x in names %}
-        {% if x['artists'] == 'Laury Hill' %}
-        <div class="card" style="width: 18rem;">
-            <img src="{{ x['img'] }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{ x['name']}}</h5>
-              <h4 class="card-text">{{ x['Genre'] }}</h4>
-              
+
+<div class="container">
+    <div class="row">
+        <div class="col mb-5 pt-5">
+
+       
+
+            <div class="mx-auto" style="width: 200px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTidq4zGlfhjdGfTRU4QQQsPBLYU8_NQ7Y0LQ&usqp=CAU" alt="" height="260">
+                <a href="{{ url_for('contact') }}">Top 5 Favorites</a>
             </div>
-          </div>
 
-         {% else %}
-         <div class="card" style="width: 18rem;">
-            <img src="{{ x['img'] }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{ x['name']}}</h5>
-              <p class="card-text">Genre: {{ x['Genre'] }}</p>
-
-         {% endif %}
-
-
-
-    {% endfor %}
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-</body>
-</html>
+        </div>
+    </div>
+</div>
+{% endblock %}
